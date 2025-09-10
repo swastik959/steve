@@ -42,17 +42,17 @@ func (m *MockAccessSetLookup) EXPECT() *MockAccessSetLookupMockRecorder {
 }
 
 // AccessFor mocks base method.
-func (m *MockAccessSetLookup) AccessFor(arg0 user.Info) *accesscontrol.AccessSet {
+func (m *MockAccessSetLookup) AccessFor(user user.Info) *accesscontrol.AccessSet {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "AccessFor", arg0)
+	ret := m.ctrl.Call(m, "AccessFor", user)
 	ret0, _ := ret[0].(*accesscontrol.AccessSet)
 	return ret0
 }
 
 // AccessFor indicates an expected call of AccessFor.
-func (mr *MockAccessSetLookupMockRecorder) AccessFor(arg0 any) *gomock.Call {
+func (mr *MockAccessSetLookupMockRecorder) AccessFor(user any) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AccessFor", reflect.TypeOf((*MockAccessSetLookup)(nil).AccessFor), arg0)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AccessFor", reflect.TypeOf((*MockAccessSetLookup)(nil).AccessFor), user)
 }
 
 // PurgeUserData mocks base method.
