@@ -1,6 +1,6 @@
 module github.com/rancher/steve
 
-go 1.24.6
+go 1.25.0
 
 replace (
 	github.com/crewjam/saml => github.com/rancher/saml v0.4.14
@@ -9,15 +9,15 @@ replace (
 	github.com/rancher/apiserver => github.com/swastik959/apiserver v0.0.0-20250908070507-63353cd3e4da
 	github.com/rancher/dynamiclistener => github.com/swastik959/dynamiclistener v0.0.0-20250908091333-5dc048dc0ba0
 
-	github.com/rancher/lasso => github.com/krunalhinguu/lasso v0.0.0-20250904230131-2e5b75853dc0
-	github.com/rancher/norman => github.com/swastik959/norman v0.0.0-20250908065538-4a8ca43cc36b
-	github.com/rancher/remotedialer => github.com/swastik959/remotedialer v0.0.0-20250910083847-4e0a13da6780
-	github.com/rancher/wrangler/v3 => github.com/krunalhinguu/wrangler/v3 v3.3.1-0.20250905101441-b1b29faa8ccd
-
+	github.com/rancher/lasso => github.com/swastik959/lasso v0.0.0-20250923105400-206df1201acf
+	github.com/rancher/norman => github.com/swastik959/norman v0.0.0-20250923110638-d7a7447b0db1
+	github.com/rancher/remotedialer => github.com/swastik959/remotedialer v0.0.0-20250923111636-90aabc0f59cc
+	github.com/rancher/wrangler/v3 => github.com/swastik959/wrangler/v3 v3.0.0-20250923110430-072b1beab0de
 )
 
 require (
 	github.com/adrg/xdg v0.5.3
+	github.com/golang/mock v1.6.0
 	github.com/golang/protobuf v1.5.4
 	github.com/google/gnostic-models v0.7.0
 	github.com/google/go-cmp v0.7.0
@@ -36,18 +36,18 @@ require (
 	github.com/sirupsen/logrus v1.9.3
 	github.com/stretchr/testify v1.11.1
 	github.com/urfave/cli/v2 v2.27.7
-	go.uber.org/mock v0.5.2
+	go.uber.org/mock v0.6.0
 	golang.org/x/sync v0.16.0
 	google.golang.org/protobuf v1.36.8
 	gopkg.in/yaml.v3 v3.0.1
-	k8s.io/api v0.34.0
-	k8s.io/apiextensions-apiserver v0.34.0
-	k8s.io/apimachinery v0.34.0
-	k8s.io/apiserver v0.34.0
-	k8s.io/client-go v0.34.0
-	k8s.io/component-base v0.34.0
+	k8s.io/api v0.34.1
+	k8s.io/apiextensions-apiserver v0.34.1
+	k8s.io/apimachinery v0.34.1
+	k8s.io/apiserver v0.34.1
+	k8s.io/client-go v0.34.1
+	k8s.io/component-base v0.34.1
 	k8s.io/klog/v2 v2.130.1
-	k8s.io/kube-aggregator v0.34.0
+	k8s.io/kube-aggregator v0.34.1
 	k8s.io/kube-openapi v0.0.0-20250710124328-f3f2b991d03b
 	k8s.io/kubernetes v1.34.0
 	k8s.io/utils v0.0.0-20250604170112-4c0f3b243397
@@ -141,7 +141,7 @@ require (
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/natefinch/lumberjack.v2 v2.2.1 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
-	k8s.io/kms v0.34.0 // indirect
+	k8s.io/kms v0.34.1 // indirect
 	modernc.org/libc v1.66.3 // indirect
 	modernc.org/mathutil v1.7.1 // indirect
 	modernc.org/memory v1.11.0 // indirect
